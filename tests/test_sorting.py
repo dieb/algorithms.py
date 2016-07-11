@@ -7,8 +7,8 @@ from algorithms.sorting.bucket import bucket_sort
 from six.moves import range
 
 
-def assert_sorted(array):
-    assert sorted(array) == array
+def assert_sorted(original, result):
+    assert sorted(original) == list(result)
 
 
 def test_bucket_sort_small():
@@ -16,12 +16,12 @@ def test_bucket_sort_small():
 
     result = bucket_sort(array, 5)
 
-    assert_sorted(result)
+    assert_sorted(array, result)
 
 
 def test_bucket_sort_large():
-    array = [random.random() for _ in range(100000)]
+    array = [random.random() for _ in range(1000000)]
 
-    result = bucket_sort(array, 5)
+    result = bucket_sort(array, 10)
 
-    assert_sorted(result)
+    assert_sorted(array, result)
