@@ -2,7 +2,7 @@
 
 import math
 
-from six.moves import xrange
+from six.moves import range
 
 
 def int_size(x):
@@ -29,7 +29,7 @@ def bucket_sort(array, num_buckets):
     over a range.
 
     """
-    buckets = [[] for i in xrange(num_buckets)]
+    buckets = [[] for i in range(num_buckets)]
     minimal, maximum = min(array), max(array)
     sorted_array = []
 
