@@ -2,6 +2,8 @@
 
 import math
 
+from six.moves import xrange
+
 
 def int_size(x):
     """ Returns the number of bits required to represent x in base 2.
