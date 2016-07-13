@@ -25,11 +25,10 @@ def insertion_sort_for_loop(array):
     long its left is less or equal than itself.
 
     For every `item`,
-        Try to insert it on the left
-            Find the lowest-index item to the left that's higher than `item`
-            If found:
-                Remove previous item from its position
-                Insert item on lowest_idx
+        Find the lowest-index item to the left that's higher than `item`
+        If found:
+            Remove previous item from its position
+            Insert item on lowest_idx
 
     In summary, we act similarly to the deck of cards by sequentially searching
     what position to insert it.
