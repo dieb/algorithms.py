@@ -8,5 +8,5 @@ Classic algorithms and data structures implemented in Python.
 ## Sorting
 
 - [Bucket sort](algorithms/sorting/bucket.py)
-- [Counting sort](algorithms/counting/counting.py)
+- [Counting sort](algorithms/sorting/counting.py)
 - [Insertion sort](algorithms/sorting/insertion.py)
