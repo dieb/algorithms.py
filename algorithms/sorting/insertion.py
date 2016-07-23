@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 
 from six.moves import range
 
 
-__all__ = ('insertion_sort',)
+__all__ = ('insertion_sort', 'INSERTION_METHODS')
 
 
 def insertion_sort(array, method='forloop'):
@@ -113,4 +114,6 @@ METHODS = {
     'forloop': insertion_sort_for_loop,
     'whileloop': insertion_sort_while_loop
 }
+
+INSERTION_METHODS = METHODS.keys()
 
