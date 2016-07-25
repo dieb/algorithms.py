@@ -12,3 +12,4 @@ Classic algorithms and data structures implemented in Python.
 - [Insertion sort](algorithms/sorting/insertion.py)
 - [Radix sort (LSB)](algorithms/sorting/radix.py)
 - [Quicksort](algorithms/sorting/quicksort.py)
+- [Bubblesort](algorithms/sorting/bubblesort.py)
