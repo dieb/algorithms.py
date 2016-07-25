@@ -7,7 +7,9 @@ def test_max_heap_property():
 
     heap.insert(20)
     assert heap[0] == 20
+    assert heap.maximum == heap[0] == 20
 
     heap.insert(999)
     assert heap[0] == 999
     assert heap[1] == 20
+    assert heap.maximum == 999

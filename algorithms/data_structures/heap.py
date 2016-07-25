@@ -45,10 +45,7 @@ class MaxHeap(AbstractHeap):
     def __init__(self, items=[]):
         self.items = items[:]
         self.length = len(self.items)
-
-        if self.length > 0:
-            for i in range(self.length/2, -1, -1):
-                self._max_heapify(i)
+        self._build_max_heap()
 
     @property
     def maximum(self):
@@ -100,6 +97,11 @@ class MaxHeap(AbstractHeap):
         if idx_largest != idx:
             self._swap(idx, idx_largest)
             self._max_heapify(idx_largest)
+
+    def _build_max_heap(self):
+        if self.length > 0:
+            for i in range(int(self.length / 2), -1, -1):
+                self._max_heapify(i)
 
     def _swap(self, a, b):
         self.items[a], self.items[b] = self.items[b], self.items[a]
