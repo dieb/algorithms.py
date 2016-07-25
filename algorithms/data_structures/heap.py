@@ -16,7 +16,7 @@ class AbstractHeap(object):
 
     @staticmethod
     def parent(idx):
-        return max(idx / 2 - 1, 0)
+        return max(int(idx / 2) - 1, 0)
 
     @staticmethod
     def child_left(idx):
