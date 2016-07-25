@@ -6,7 +6,7 @@ from random import random, randint
 from six.moves import range
 
 
-LIST_SIZE_SMALL = int(10e2)
+LIST_SIZE_SMALL = int(10)
 LIST_SIZE_LARGE = int(10e3)
 INT_RANGE = (0, int(10e2))
 
