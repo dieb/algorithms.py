@@ -106,23 +106,3 @@ class MaxHeap(AbstractHeap):
 
     def __getitem__(self, index):
         return self.items[index]
-
-    def print_repr(self, idx=0, nesting=0):
-        indent = '--' * nesting
-        indent_child = '--' * (nesting + 1)
-
-        print '{}{}'.format(indent, self.items[idx])
-
-        try:
-            left = self.child_left(idx)
-            if left != 0 and left <= self.length - 1:
-                self.print_repr(left, nesting + 1)
-        except:
-            pass
-
-        try:
-            right = self.child_right(idx)
-            if right <= self.length - 1:
-                self.print_repr(right, nesting + 1)
-        except:
-            pass
