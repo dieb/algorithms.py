@@ -1,4 +1,7 @@
+from six.moves import range
+
 __all__ = ('MaxHeap',)
+
 
 class AbstractHeap(object):
     """Heap is a tree-based data structure that satisfies the heap property:
