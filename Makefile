@@ -5,4 +5,4 @@ check_syntax:
 	@pep8 algorithms/
 
 test:
-	@py.test -vvv algorithms/
+	@py.test -vvv tests/
