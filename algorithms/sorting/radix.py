@@ -12,7 +12,7 @@ def num_digits(number):
 def lsdigit(number, index):
     """ Returns the least significant digit, offset by `index`.
     """
-    return number % (10**(index + 1)) / (10**index)
+    return int(number % (10**(index + 1)) / (10**index))
 
 def radix_sort(array):
     """ Radix sort - https://en.wikipedia.org/wiki/Radix_sort
