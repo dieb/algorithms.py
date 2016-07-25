@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-
-from six.moves import range
-
-
 __all__ = ('quick_sort',)
 
 
